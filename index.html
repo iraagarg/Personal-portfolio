@@ -1,11 +1,86 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>My Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iraa Garg — Portfolio</title>
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Hello, I’m Iraa Garg</h1>
-  <p>Welcome to my portfolio website.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Iraa Garg</a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn" href="https://github.com/iraagarg" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Hi — I'm <span class="accent">Iraa</span></h1>
+          <p class="lead">Frontend developer & CS student. I build accessible, responsive websites using clean HTML & CSS.</p>
+          <p><a class="cta" href="#projects">See my work</a></p>
+        </div>
+        <div class="hero-image">
+          <img src="assets/profile.jpg" alt="Portrait of Iraa Garg" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About</h2>
+      <p>I am a BTech 2nd year student (CSE-DS) at AKGEC. I enjoy competitive programming, algorithms, and building front-end interfaces.</p>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <img src="assets/project1.png" alt="Screenshot of Project One" />
+          <h3>Project One</h3>
+          <p>Short description of project one. Tech: HTML, CSS.</p>
+          <p><a href="#" target="_blank" rel="noopener">Live</a> · <a href="#" target="_blank" rel="noopener">Code</a></p>
+        </article>
+        <!-- duplicate card blocks for more projects -->
+      </div>
+    </section>
+
+    <section id="skills" class="skills container">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>C</li>
+        <li>C++</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>Or find me on <a href="https://github.com/iraagarg" target="_blank" rel="noopener">GitHub</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Iraa Garg — Built with HTML &amp; CSS</p>
+    </div>
+  </footer>
 </body>
 </html>
+
