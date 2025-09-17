@@ -1,24 +1,70 @@
-body {
-    font-family: Arial, sans-serif;
+:root {
+    --primary-color: #a855f7;   
+    --secondary-color: #ec4899; 
+}
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
 }
 
-header {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+html {
+    scroll-behavior: smooth;
 }
 
-section {
-    padding: 40px;
-}
-
-footer {
-    background: #222;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
     color: #fff;
-    text-align: center;
-    padding: 10px;
 }
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8%; 
+    position: sticky;
+    top: 0;
+    background: rgba(20, 20, 20, 0.9); 
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li { list-style: none; }
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover { color: var(--secondary-color); }
+
+.logo a {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: #1f1f1f; 
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo a:hover {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #1f1f1f; 
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(168, 85, 247, 0.5);
+}
+
